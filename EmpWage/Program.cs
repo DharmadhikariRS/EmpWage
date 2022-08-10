@@ -25,8 +25,11 @@
             //empWageSwitchCase.EmployeeWageSwitchCase();
 
             //UC5
-            EmployeeWageMonth employeeWageMonth = new EmployeeWageMonth();
-            employeeWageMonth.EmpWageForMonth();
+            //EmployeeWageMonth employeeWageMonth = new EmployeeWageMonth();
+            //employeeWageMonth.EmpWageForMonth();
+            //UC6
+            EmployeeWageDayHr employeeWageDayHr = new EmployeeWageDayHr();
+            employeeWageDayHr.EmpWageForMonthHr();
 
         }
     }
