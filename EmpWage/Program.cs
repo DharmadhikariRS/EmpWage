@@ -11,10 +11,18 @@
             //uc1.EmpPresentOrAbsent();
 
             ////UC2
+
             //EmployeeDailyWageFulltime employeeDailyWageFulltime = new EmployeeDailyWageFulltime();
             //employeeDailyWageFulltime.EmpWageFullTime();
-            EmpWageFullPart empWageFullPart = new EmpWageFullPart();
-            empWageFullPart.EmpWageFullPartTime();
+
+            //UC3
+
+            //EmpWageFullPart empWageFullPart = new EmpWageFullPart();
+            //empWageFullPart.EmpWageFullPartTime();
+
+            //UC4
+            EmpWageSwitchCase empWageSwitchCase = new EmpWageSwitchCase();
+            empWageSwitchCase.EmployeeWageSwitchCase();
 
         }
     }
