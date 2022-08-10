@@ -6,8 +6,10 @@
         {
             Console.WriteLine("Welcome to Employee Wage Computation");
 
-            EmpPresentAbsent uc1 = new EmpPresentAbsent();
-            uc1.EmpPresentOrAbsent();
+            //EmpPresentAbsent uc1 = new EmpPresentAbsent();
+            //uc1.EmpPresentOrAbsent();
+            EmployeeDailyWageFulltime employeeDailyWageFulltime = new EmployeeDailyWageFulltime();
+            employeeDailyWageFulltime.EmpWageFullTime();
 
         }
     }
