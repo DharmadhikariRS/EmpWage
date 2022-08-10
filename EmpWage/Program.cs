@@ -20,9 +20,13 @@
             //EmpWageFullPart empWageFullPart = new EmpWageFullPart();
             //empWageFullPart.EmpWageFullPartTime();
 
-            //UC4
-            EmpWageSwitchCase empWageSwitchCase = new EmpWageSwitchCase();
-            empWageSwitchCase.EmployeeWageSwitchCase();
+            ////UC4
+            //EmpWageSwitchCase empWageSwitchCase = new EmpWageSwitchCase();
+            //empWageSwitchCase.EmployeeWageSwitchCase();
+
+            //UC5
+            EmployeeWageMonth employeeWageMonth = new EmployeeWageMonth();
+            employeeWageMonth.EmpWageForMonth();
 
         }
     }
