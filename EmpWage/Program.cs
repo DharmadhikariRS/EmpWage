@@ -27,10 +27,15 @@
             //UC5
             //EmployeeWageMonth employeeWageMonth = new EmployeeWageMonth();
             //employeeWageMonth.EmpWageForMonth();
-            //UC6
-            EmployeeWageDayHr employeeWageDayHr = new EmployeeWageDayHr();
-            employeeWageDayHr.EmpWageForMonthHr();
 
+            //UC6
+            //EmployeeWageDayHr employeeWageDayHr = new EmployeeWageDayHr();
+            //employeeWageDayHr.EmpWageForMonthHr();
+
+            // UC7
+
+            ClassMembersEmployeeWage classMembersEmployeeWage = new ClassMembersEmployeeWage();
+            classMembersEmployeeWage.EmpWageForMonthHr();
         }
     }
 }
