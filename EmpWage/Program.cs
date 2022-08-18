@@ -32,10 +32,15 @@
             //EmployeeWageDayHr employeeWageDayHr = new EmployeeWageDayHr();
             //employeeWageDayHr.EmpWageForMonthHr();
 
-            // UC7
+            //// UC7
 
-            ClassMembersEmployeeWage classMembersEmployeeWage = new ClassMembersEmployeeWage();
-            classMembersEmployeeWage.EmpWageForMonthHr();
+            //ClassMembersEmployeeWage classMembersEmployeeWage = new ClassMembersEmployeeWage();
+            //classMembersEmployeeWage.EmpWageForMonthHr();
+
+            //UC8
+            MultipleCompanyWage multipleCompanyWage = new MultipleCompanyWage();
+            multipleCompanyWage.EmpWageForMonthHr("BridgeLabz", 30, 25, 100);
+            multipleCompanyWage.EmpWageForMonthHr("Tata", 25, 25, 100);
         }
     }
 }
