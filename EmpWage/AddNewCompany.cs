@@ -84,5 +84,28 @@ namespace EmpWage
 
             }
         }
+        public void DisplywageByCompanyName(string companyName)   
+        {
+            int CheckCompanyPresent = 0;
+            foreach (var computeWage in CompanyList)
+            {
+                if (computeWage.CompanyName == companyName)
+                {
+                    CheckCompanyPresent++;
+                    Console.WriteLine("Total wage for company {0} is {1}", computeWage.CompanyName, computeWage.totalWage);
+                    Console.Write("And dailyWage is: ");
+                    foreach (var dailywage in computeWage.DailyWage)
+                    {
+                        Console.Write(dailywage + " ");
+                    }
+                    Console.WriteLine();
+                }
+            }
+            if (CheckCompanyPresent == 0)
+            {
+                Console.Write("Company Data is not stored ");
+            }
+        }
+
     }
 }

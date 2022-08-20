@@ -84,18 +84,38 @@
 
             //Uc13
 
+            //AddNewCompany company = new AddNewCompany();
+            //Console.WriteLine("Enter y to add company");
+            //string input = Console.ReadLine();
+            //while (input == "y")
+            //{
+            //    company.AddCompanyBylist();
+            //    Console.WriteLine("Company Data Stored again enter y to add company");
+            //    input = Console.ReadLine();
+
+            //}
+            //company.DisplayByList();
+            //company.DisplayDailyByList();
             AddNewCompany company = new AddNewCompany();
-            Console.WriteLine("Enter y to add company");
+
+            Console.WriteLine("Enter Y to add company");
             string input = Console.ReadLine();
             while (input == "y")
             {
                 company.AddCompanyBylist();
-                Console.WriteLine("Company Data Stored again enter y to add company");
+                Console.WriteLine("Company Data Stored again enter Y to add company");
                 input = Console.ReadLine();
 
             }
-            company.DisplayByList();
-            company.DisplayDailyByList();
+            
+          ////////UC14
+            Console.WriteLine("Enter Company name to check daily and total wage");
+            string companyName = Console.ReadLine();
+            company.DisplywageByCompanyName(companyName);
+
+
+        
+    
         }
     }
 }
