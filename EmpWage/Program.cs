@@ -47,10 +47,20 @@
             //ComputeWage Tata = new ComputeWage("Tata", 20, 20, 100);
             //Tata.DisplaySalary();
 
-          //  UC10
-            AddNewCompany company = new AddNewCompany();
+            //  UC10
+            // AddNewCompany company = new AddNewCompany();
 
-         //   UC10
+            //   UC10
+            //for (int i = 0; i < 3; i++)
+            //{
+
+            //    company.AddCompanyByArray();
+
+            //}
+            //company.DisplayByArray();
+
+            //Uc11
+            AddNewCompany company = new AddNewCompany();
             for (int i = 0; i < 3; i++)
             {
 
@@ -58,7 +68,6 @@
 
             }
             company.DisplayByArray();
-
         }
     }
 }

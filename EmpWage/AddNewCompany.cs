@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace EmpWage
 {
-    internal class AddNewCompany  
+    /// <summary>
+    /// UC11
+    /// </summary>
+    internal interface DataInterFace
+    {
+        public ComputeWage GetData();
+
+    }
+
+
+    //// UC all
+
+    internal class AddNewCompany : DataInterFace
     {
         int CompanyIndex = 0; 
         string CompanyName;
