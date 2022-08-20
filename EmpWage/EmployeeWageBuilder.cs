@@ -15,7 +15,7 @@ namespace EmpWage
         const int isFullTime = 1;
         const int isPartTime = 2;
         internal string CompanyName;
-        
+        internal List<int> DailyWage = new List<int>(); 
 
 
 
@@ -55,7 +55,8 @@ namespace EmpWage
                         break;
 
                 }
-               
+                DailyWage.Add(dailyWage); 
+
                 totalWage = totalWage + dailyWage;
                 totalWorkingDays++;
             }
