@@ -38,9 +38,15 @@
             //classMembersEmployeeWage.EmpWageForMonthHr();
 
             //UC8
-            MultipleCompanyWage multipleCompanyWage = new MultipleCompanyWage();
-            multipleCompanyWage.EmpWageForMonthHr("BridgeLabz", 30, 25, 100);
-            multipleCompanyWage.EmpWageForMonthHr("Tata", 25, 25, 100);
+            //MultipleCompanyWage multipleCompanyWage = new MultipleCompanyWage();
+            //multipleCompanyWage.EmpWageForMonthHr("BridgeLabz", 30, 25, 100);
+            //multipleCompanyWage.EmpWageForMonthHr("Tata", 25, 25, 100);
+
+            //Uc9
+
+            ComputeWage Tata = new ComputeWage("Tata", 20, 20, 100);
+            Tata.DisplaySalary();
+
         }
     }
 }
