@@ -59,15 +59,28 @@
             //}
             //company.DisplayByArray();
 
-            //Uc11
-            AddNewCompany company = new AddNewCompany();
-            for (int i = 0; i < 3; i++)
-            {
+            ////Uc11
+            //AddNewCompany company = new AddNewCompany();
+            //for (int i = 0; i < 3; i++)
+            //{
 
-                company.AddCompanyByArray();
+            //    company.AddCompanyByArray();
+
+            //}
+            //company.DisplayByArray();
+
+            //Uc12
+            AddNewCompany company = new AddNewCompany();
+            Console.WriteLine("Enter y to add company");
+            string input = Console.ReadLine();
+            while (input == "y")
+            {
+                company.AddCompanyBylist();
+                Console.WriteLine("Company Data Stored again enter y to add company");
+                input = Console.ReadLine();
 
             }
-            company.DisplayByArray();
+           company.DisplayByList(); ///UC12
         }
     }
 }

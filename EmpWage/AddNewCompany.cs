@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmpWage
 {
-    /// <summary>
-    /// UC11
-    /// </summary>
+
     internal interface DataInterFace
     {
         public ComputeWage GetData();
@@ -16,7 +14,7 @@ namespace EmpWage
     }
 
 
-    //// UC all
+   
 
     internal class AddNewCompany : DataInterFace
     {
@@ -27,8 +25,8 @@ namespace EmpWage
         int TotalWorkingHrs;
         int TotalWage;
         static ComputeWage[] ComapanyArray = new ComputeWage[3]; 
-        static int index = 0; 
-     
+        static int index = 0;
+        List<ComputeWage> CompanyList = new List<ComputeWage>(); 
 
         public ComputeWage GetData()
         {
@@ -58,7 +56,21 @@ namespace EmpWage
             {
                 Console.WriteLine("Wage for company {0} is {1}", ComapanyArray[i].CompanyName, ComapanyArray[i].totalWage);
             }
-        }     
+        }
 
+        public void AddCompanyBylist()   
+        {
+            ComputeWage computeWage = GetData();
+            CompanyList.Add(computeWage);
+            CompanyIndex++;
+        }
+
+        public void DisplayByList()  
+        {
+            foreach (var computeWage in CompanyList)
+            {
+                Console.WriteLine("Total wage for company {0} is {1}", computeWage.CompanyName, computeWage.totalWage);
+            }
+        }
     }
 }
